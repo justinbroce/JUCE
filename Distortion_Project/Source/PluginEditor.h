@@ -82,6 +82,9 @@ private:
     mySlider outGainSlider;
     mySlider driveSlider;
     mySlider clipSlider;   
+    mySlider clipSliderNeg;
+    mySlider highPassSlider;
+    mySlider lowPassSlider;
     juce::ComboBox typeBox;
 
     // Create Label Objects
@@ -98,6 +101,8 @@ private:
     std::unique_ptr<SliderAttachments> clipSliderAttachment;
     std::unique_ptr<SliderAttachments> inGainSliderAttachment;
     std::unique_ptr<SliderAttachments> outGainSliderAttachment;
-
+    std::unique_ptr<SliderAttachments> clipSliderNegAttachment;
+    std::unique_ptr<SliderAttachments> highPassSliderAttachment;
+    std::unique_ptr<SliderAttachments> lowPassSliderAttachment;
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (Distortion_ProjectAudioProcessorEditor)
 };
